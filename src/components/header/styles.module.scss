@@ -1,0 +1,13 @@
+.main {
+  background-color: coral;
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+  .logoImg {
+    font-size: 50px;
+  }
+
+}
