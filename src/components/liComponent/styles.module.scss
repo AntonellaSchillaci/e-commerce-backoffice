@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+
+  .icon { 
+    font-size: 23px;
+    color: coral;
+  }
+
+  .label {
+    color:antiquewhite;
+    cursor: pointer;
+
+    &:hover {
+      color: coral;
+      font-weight: bold;
+    }
+  }
+}
