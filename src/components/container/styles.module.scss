@@ -1,15 +1,39 @@
 .main {
   display: flex;
+
+  .sxColumn {
+    width: 80px;
+    height: 800px;
+  }
   
+  .dxColumn {
+    background-color: antiquewhite;
+    width: 500px;
+  }
+  
+  $breakpoint-tablet : 768px;
+  @media (min-width: $breakpoint-tablet) {
+    .sxColumn {
+      width: 200px;
+      height: 1000px;
+    }
+    
+    .dxColumn {
+      width: 800px;
+    }
+  }
 
-.sxColumn {
-  width: 300px;
-  height: 800px;
-}
-
-.dxColumn {
-  width: 800px;
-  background-color: antiquewhite;
+  $breakpoint-desktop: 1024px;
+  @media (min-width: $breakpoint-desktop) {
+  
+    .sxColumn {
+      width: 300px;
+      height: 800px;
+    }
+    
+    .dxColumn {
+      width: 1000px;
+    }
 }
 
 }

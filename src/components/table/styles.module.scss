@@ -1,0 +1,42 @@
+.main {
+    .tableBody {
+        margin-top: 20px;
+    }
+
+    .tableHead {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tableRow {
+        border-bottom: 0.5px solid coral;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3px;
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        img {
+            width: 70px;
+        }
+
+        .btnSet {
+            display: flex;
+            gap: 5px;
+
+        }
+        $breakpoint-tablet : 768px;
+        @media (min-width: $breakpoint-tablet) {
+
+            .btnSet {
+                gap: 20px;
+            }
+        }
+    }
+
+}

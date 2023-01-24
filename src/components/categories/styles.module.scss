@@ -1,0 +1,14 @@
+.main {
+    height: 800px;
+    overflow: scroll;
+
+    h1 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    $breakpoint-tablet : 768px;
+  @media (min-width: $breakpoint-tablet) {
+    height: 1000px;
+  }
+}

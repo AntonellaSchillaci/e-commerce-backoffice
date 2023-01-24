@@ -4,17 +4,46 @@
   padding: 15px;
 
   .icon { 
-    font-size: 23px;
+    font-size: 30px;
     color: coral;
+    cursor: pointer;
+
+    &:hover {
+      color: antiquewhite;
+    }
   }
 
   .label {
-    color:antiquewhite;
-    cursor: pointer;
+    display: none;
 
     &:hover {
       color: coral;
       font-weight: bold;
     }
+  }
+
+  $breakpoint-tablet : 768px;
+  @media (min-width: $breakpoint-tablet) {
+
+    .label {
+      display: inline;
+      color:antiquewhite;
+      cursor: pointer;
+
+      &:hover {
+        color: coral;
+        font-weight: bold;
+    }
+  }
+
+  }
+
+  $breakpoint-desktop: 1024px;
+  @media (min-width: $breakpoint-desktop) {
+
+    .icon {
+      font-size: 23px;
+  }
+    
   }
 }

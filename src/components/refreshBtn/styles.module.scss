@@ -1,0 +1,15 @@
+.main {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: coral;
+    color: antiquewhite;
+    border: 1px solid coral;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: antiquewhite;
+        color:black;
+    }
+}
