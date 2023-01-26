@@ -1,9 +1,15 @@
 import styles from "./styles.module.scss";
 import { AiTwotoneDelete } from "react-icons/ai";
+import { DELETE } from "../../libs/HTTP";
 
-const DeleteBtn = () => {
+const DeleteBtn = ({id, getData}) => {
+  const deleteElement = () => {
+    DELETE("categories", "/" + id).then(data => {
+      getData();
+    })
+  }
   return (
-    <button className={styles.main}>
+    <button  onClick={() => deleteElement()} className={styles.main}>
       <AiTwotoneDelete />
     </button>
   );

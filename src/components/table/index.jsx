@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 import RefreshBtn from "../refreshBtn";
 import EditBtn from "../editBtn";
 import DeleteBtn from "../deleteBtn";
-import AddBtn from "../addBtn";
 
 const Table = ({ categoriesState, getData, loading }) => {
   return (
@@ -21,7 +20,6 @@ const Table = ({ categoriesState, getData, loading }) => {
               <p>{item.name.substring(0,10)}</p>
               <div className={styles.btnSet}>
                 <EditBtn />
-                <AddBtn />
                 <DeleteBtn />
               </div>
             </div>
