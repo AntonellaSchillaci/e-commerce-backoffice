@@ -1,4 +1,5 @@
 .main {
+   
     .tableBody {
         margin-top: 20px;
     }
@@ -6,6 +7,7 @@
     .tableHead {
         display: flex;
         justify-content: center;
+        gap: 20px;
     }
 
     .tableRow {
@@ -32,11 +34,16 @@
         }
         $breakpoint-tablet : 768px;
         @media (min-width: $breakpoint-tablet) {
-
+                width: 500px;
+            
             .btnSet {
                 gap: 20px;
             }
         }
-    }
 
-}
+        $breakpoint-desktop : 1024px;
+        @media (min-width: $breakpoint-desktop) {
+            width: 700px;
+        }
+
+} }

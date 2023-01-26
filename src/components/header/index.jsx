@@ -1,6 +1,4 @@
-import {
-  BsShop
-} from "react-icons/bs";
+import {BsShop} from "react-icons/bs";
 import styles from "./styles.module.scss";
 
 const Header = () => {

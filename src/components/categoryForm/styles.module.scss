@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    input {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .button {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background-color: coral;
+    color: antiquewhite;
+    border: 1px solid coral;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: antiquewhite;
+        color:black;
+    }
+        
+    }
+}

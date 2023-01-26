@@ -1,0 +1,53 @@
+.main {
+   padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items:flex-start;
+   font-size: 20px;
+   border-bottom: 1px solid coral;
+
+   .btnContainer {
+    border: none;
+   }
+    
+   .btnEdit {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 5px;
+    margin: 0 10px;
+    background-color: coral;
+    color: antiquewhite;
+    border: 1px solid coral;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: antiquewhite;
+        color:black;
+    }
+  
+    $breakpoint-tablet : 768px;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+    padding: 5px 7px;
+  }
+
+   }
+
+   .btnDone {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: coral;
+    color: antiquewhite;
+    border: 1px solid coral;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: antiquewhite;
+        color:black;
+    }
+  }
+  
+  }
